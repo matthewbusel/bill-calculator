@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Bill Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8f1d54c877.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="logo-container">
+          <span style="font-size: 3em; color: white;">
+            <i class="fas fa-calculator"></i>
+          </span>
+          <h2>Bill Calculator</h2>
+        </div>
+        <div class="navbar">
+          <ul class="unordered">
+            <li>Main</li>
+            <li>About</li>
+          </ul>
+        </div>
+      </div>
+      <div class="body">
+        <div class="calculator">
+          <div class="calculator-header">
+            <h3>Header</h3>
+          </div>
+          <div class="calculator-body">
+            <form class="" action="index.html" method="post">
+              <div class="form-section">
+                <label for="num-ppl">Number of People: </label>
+
+                <input type="text" name="num-ppl" id="num-ppl" required>
+              </div>
+              <div class="form-section">
+                <label for="bill">Bill Amount: </label>
+
+                <input type="text" name="bill" id="bill" required>
+              </div>
+              <div class="form-section">
+                <label for="tip-per">Tip Percentage: </label>
+
+                <select name="tip-per" id="tip-per">
+                    <option value="">--Please choose an option--</option>
+                    <option value="5">5%</option>
+                    <option value="10">10%</option>
+                    <option value="15">15%</option>
+                    <option value="20">20%</option>
+                    <option value="25">25%</option>
+                </select>
+              </div>
+              <div class="form-section">
+                <input type="submit" value="Calculate" name="submit" id="submit">
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="result-container">
+          <span style="font-size: 3em; color: green;">
+            <i class="fas fa-question-circle"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

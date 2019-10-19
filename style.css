@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  font-family: monospace;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: green;
+  padding: 1em;
+  color: white;
+}
+
+.logo-container {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  width: 230px;
+  align-items: center;
+}
+
+.calculator {
+  border: 1px solid green;
+  margin: 0 auto;
+  margin-top: 2em;
+  width: 80%;
+}
+
+.calculator-header {
+  padding: 2em;
+}
+
+.calculator-body {
+  padding: 2em;
+}
+
+.form-section {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.result-container {
+  width: 1em;
+  margin: 0 auto;
+  padding: 2em;
+}
