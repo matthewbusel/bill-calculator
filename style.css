@@ -6,7 +6,7 @@
 .header {
   display: flex;
   justify-content: space-between;
-  background-color: green;
+  background-color: #96E8BC;
   padding: 1em;
   color: white;
 }
@@ -17,21 +17,58 @@
   justify-content: space-between;
   width: 230px;
   align-items: center;
+  padding-left: 1em;
+}
+
+.unordered {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.unordered li {
+  padding-left: 1.5em;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.unordered li:hover {
+  color: #C9FFE2;
+  cursor: pointer;
 }
 
 .calculator {
-  border: 1px solid green;
+  border: 2px solid #96E8BC;
   margin: 0 auto;
-  margin-top: 2em;
-  width: 80%;
+  margin-top: 4em;
+  margin-bottom: 2em;
+  width: 450px;
+  color: #4B7F52;
+  box-shadow: 0.1em 0.4em 1.8em #C8C8C8;
+  border-radius: 1em;
+  padding: 1em;
 }
 
 .calculator-header {
-  padding: 2em;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 2em;
+  padding-bottom: 1em;
+  display: flex;
+  width: 300px;
+  margin: 0 auto;
+  justify-content: space-around;
+  align-items: center;
+  color: #7DD181;
+  border-bottom: 1.5px solid #96E8BC;
 }
 
 .calculator-body {
-  padding: 2em;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 1em;
+  font-size: 1.2em;
 }
 
 .form-section {
@@ -39,8 +76,62 @@
   padding-bottom: 1em;
 }
 
+.form-section label {
+  font-weight: bold;
+  float: left;
+  width: 170px;
+}
+
+.form-section input {
+  font-size: 14px;
+  width: 200px;
+  height: 21px;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  border-top: none;
+  border-bottom: 1px solid #DDD;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,.39), 0 -1px 1px #FFF, 0 1px 0 #FFF;
+}
+
+#tip-per {
+  font-size: 14px;
+  width: 200px;
+  height: 21px;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  border-top: none;
+  border-bottom: 1px solid #DDD;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,.39), 0 -1px 1px #FFF, 0 1px 0 #FFF;
+}
+
+#submit {
+  float: none;
+  width: 100%;
+  height: 3em;
+  background-color: #7DD181;
+  font-weight: bolder;
+  font-size: 1.2em;
+  border-radius: 2px;
+  color: white;
+}
+
+#submit:hover {
+  cursor: pointer;
+  background-color: #4B7F52;
+  box-shadow: 0.01em 0.01em .05em #C8C8C8;
+}
+
 .result-container {
-  width: 1em;
+  width: 200px;
   margin: 0 auto;
   padding: 2em;
+}
+
+.result-container h2 {
+  display: inline-block;
+}
+
+.result-container h3 {
+  display: inline-block;
+  margin-left: 20px;
 }

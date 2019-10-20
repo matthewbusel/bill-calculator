@@ -25,17 +25,20 @@
       <div class="body">
         <div class="calculator">
           <div class="calculator-header">
-            <h3>Header</h3>
+              <span style="font-size: 2em; color: #7DD181;">
+                <i class="fas fa-calculator"></i>
+              </span>
+              <h2>Bill Calculator</h2>
           </div>
           <div class="calculator-body">
-            <form class="" action="index.html" method="post">
+            <form id="form">
               <div class="form-section">
                 <label for="num-ppl">Number of People: </label>
 
                 <input type="text" name="num-ppl" id="num-ppl" required>
               </div>
               <div class="form-section">
-                <label for="bill">Bill Amount: </label>
+                <label for="bill">Bill Amount: $</label>
 
                 <input type="text" name="bill" id="bill" required>
               </div>
@@ -43,7 +46,6 @@
                 <label for="tip-per">Tip Percentage: </label>
 
                 <select name="tip-per" id="tip-per">
-                    <option value="">--Please choose an option--</option>
                     <option value="5">5%</option>
                     <option value="10">10%</option>
                     <option value="15">15%</option>
@@ -58,11 +60,10 @@
           </div>
         </div>
         <div class="result-container">
-          <span style="font-size: 3em; color: green;">
-            <i class="fas fa-question-circle"></i>
-          </span>
+
         </div>
       </div>
     </div>
+    <script src="bill.js"></script>
   </body>
 </html>
