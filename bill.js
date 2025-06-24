@@ -1,13 +1,12 @@
 // Select elements
-const form = document.querySelector("#form");
-const submit = document.querySelector("#submit");
-const people = document.querySelector("#num-ppl");
-const bill = document.querySelector("#bill");
-const tip = document.querySelector("#tip-per");
-const resultContainer = document.querySelector(".result-container");
+const form = document.querySelector('#form');
+const people = document.querySelector('#num-ppl');
+const bill = document.querySelector('#bill');
+const tip = document.querySelector('#tip-per');
+const resultContainer = document.querySelector('.result-container');
 
 // Event listeners
-submit.addEventListener('click', function(e) {
+form.addEventListener('submit', function(e) {
   e.preventDefault();
   if (!people.value || !bill.value || !tip.value) {
     alert('Please complete form')
@@ -19,9 +18,9 @@ submit.addEventListener('click', function(e) {
 // Calculate tip
 function calculateTip() {
   // Inputted values
-  let numPpl = people.value;
-  let billAmt = bill.value;
-  let tipPer = tip.value;
+  let numPpl = parseFloat(people.value);
+  let billAmt = parseFloat(bill.value);
+  let tipPer = parseFloat(tip.value);
 
   // Calculate bill per person
   let billPerson = billAmt / numPpl;
